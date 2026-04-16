@@ -8,7 +8,10 @@
   "foreign_transaction_fee": false,
 
   "booking_insights": {
-    "hotel": "Hotel bookings almost always favor this card: 8X UR via Chase Travel portal at 1.5¢/pt = 12¢ per $1 — far ahead of Amex Gold (2X at 1.0¢ = 2¢) and WF Autograph (3X at 1.0¢ = 3¢). Stack with the $300 travel credit and $500 The Edit credit for maximum value."
+    "hotel": "Hotel bookings almost always favor this card: 8X UR via Chase Travel portal at 1.5¢/pt = 12¢ per $1 — far ahead of Amex Gold (2X at 1.0¢ = 2¢) and WF Autograph (3X at 1.0¢ = 3¢). Stack with the $300 travel credit and $500 The Edit credit for maximum value.",
+    "lyft": "Lyft earns 5X UR (4X bonus + 1X base) at 1.5¢/pt = 7.5¢ per $1 — beats WF Autograph's 3X on transit (3.0¢). Bonus valid through September 30, 2027. Also includes a $10/month Lyft credit when card is added to the Lyft app.",
+    "car_rental": "WF Autograph earns more points on car rentals (3X = 3.0¢ vs 1X = 1.5¢ here). However, paying with CSR includes complimentary Auto Rental Collision Damage Waiver — decline the rental company's CDW/LDW and save $15–30/day. Factor in that saving when deciding which card to use.",
+    "doordash": "On top of 3X dining points, you get $5 off one restaurant DoorDash order per month AND two $10-off discounts on non-restaurant DoorDash orders per month — requires active DashPass membership."
   },
 
   "earning_rates": {
@@ -40,6 +43,14 @@
       "spend_cap_usd": 5000,
       "expiry": "2027-12-31"
     },
+    "car_rental": {
+      "multiplier": 1,
+      "note": "No bonus points, but pays for itself via complimentary Auto Rental Collision Damage Waiver — decline the rental company's insurance"
+    },
+    "doordash": {
+      "multiplier": 3,
+      "note": "Earns 3X as dining; monthly DoorDash credits also apply (DashPass must be active)"
+    },
     "default": {
       "multiplier": 1,
       "note": "All other eligible purchases"
@@ -54,9 +65,10 @@
     "takeout": "dining",
     "delivery": "dining",
     "grubhub": "dining",
-    "doordash": "dining",
+    "doordash": "doordash",
+    "door dash": "doordash",
+    "caviar": "doordash",
     "ubereats": "dining",
-    "caviar": "dining",
     "dunkin": "dining",
     "starbucks": "dining",
     "flight": "airline",
@@ -77,7 +89,10 @@
     "ihg": "hotel",
     "airbnb": "hotel",
     "lyft": "lyft",
-    "peloton": "peloton_equipment"
+    "peloton": "peloton_equipment",
+    "car rental": "car_rental",
+    "rent a car": "car_rental",
+    "rental car": "car_rental"
   },
 
   "booking_context_note": "Earning 8X requires booking through Chase Travel portal. 4X applies when booking directly with airlines or hotels. The app should ask user how they are booking travel to determine correct multiplier.",

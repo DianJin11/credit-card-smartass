@@ -7,6 +7,10 @@
   "points_currency": "MR",
   "foreign_transaction_fee": false,
 
+  "booking_insights": {
+    "ubereats": "You get $10/month Uber Cash (enrolled automatically) usable on Uber Eats and Uber rides — effectively a free order each month. On top of that, Uber Eats orders still earn 4X MR as dining (4.0¢ per $1)."
+  },
+
   "earning_rates": {
     "dining": {
       "multiplier": 4,
@@ -27,6 +31,10 @@
       "multiplier": 2,
       "note": "Prepaid hotels and eligible travel booked through AmexTravel.com"
     },
+    "ubereats": {
+      "multiplier": 4,
+      "note": "Earns 4X as dining, plus $10/month Uber Cash credit applies to Uber Eats orders"
+    },
     "default": {
       "multiplier": 1,
       "note": "All other eligible purchases"
@@ -42,7 +50,8 @@
     "delivery": "dining",
     "grubhub": "dining",
     "doordash": "dining",
-    "ubereats": "dining",
+    "ubereats": "ubereats",
+    "uber eats": "ubereats",
     "dunkin": "dining",
     "cheesecake factory": "dining",
     "five guys": "dining",

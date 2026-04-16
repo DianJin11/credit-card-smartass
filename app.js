@@ -23,7 +23,10 @@ const CATEGORY_LABELS = {
   transit:             'Transit & Rideshare',
   streaming:           'Streaming',
   phone:               'Phone Plan',
-  lyft:                'Lyft',
+  lyft:                'Lyft (5X CSR bonus)',
+  car_rental:          'Car Rental',
+  ubereats:            'Uber Eats',
+  doordash:            'DoorDash',
   chase_travel_portal: 'Chase Travel Portal',
   default:             'General Purchase'
 };
@@ -101,11 +104,9 @@ function formatValue(centsPerDollar, amount) {
 }
 
 function getCategoryLabel(result) {
-  if (result.rate.usingPortal) return CATEGORY_LABELS['airline']; // "Airline (via portal)"
-  // hotel usingPortal handled the same way via the check above
-  const raw = result.category;
-  if (result.rate.usingPortal && raw === 'hotel') return CATEGORY_LABELS['hotel'];
-  return CATEGORY_LABELS[raw] || raw;
+  if (result.rate.usingPortal && result.category === 'hotel') return CATEGORY_LABELS['hotel'];
+  if (result.rate.usingPortal) return CATEGORY_LABELS['airline'];
+  return CATEGORY_LABELS[result.category] || result.category;
 }
 
 function renderResults(ranked, amount) {
