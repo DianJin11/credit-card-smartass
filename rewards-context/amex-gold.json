@@ -1,0 +1,144 @@
+{
+  "id": "amex-gold",
+  "name": "American Express Gold Card",
+  "issuer": "American Express",
+  "network": "American Express",
+  "rewards_program": "Membership Rewards",
+  "points_currency": "MR",
+  "foreign_transaction_fee": false,
+
+  "earning_rates": {
+    "dining": {
+      "multiplier": 4,
+      "note": "Restaurants worldwide, including takeout and delivery in the U.S.",
+      "annual_cap_usd": 50000
+    },
+    "grocery": {
+      "multiplier": 4,
+      "note": "U.S. supermarkets only",
+      "annual_cap_usd": 25000,
+      "cap_fallback_multiplier": 1
+    },
+    "airline": {
+      "multiplier": 3,
+      "note": "Flights booked directly with airlines or on AmexTravel.com"
+    },
+    "hotel": {
+      "multiplier": 2,
+      "note": "Prepaid hotels and eligible travel booked through AmexTravel.com"
+    },
+    "default": {
+      "multiplier": 1,
+      "note": "All other eligible purchases"
+    }
+  },
+
+  "category_map": {
+    "restaurant": "dining",
+    "cafe": "dining",
+    "coffee shop": "dining",
+    "fast food": "dining",
+    "takeout": "dining",
+    "delivery": "dining",
+    "grubhub": "dining",
+    "doordash": "dining",
+    "ubereats": "dining",
+    "dunkin": "dining",
+    "cheesecake factory": "dining",
+    "five guys": "dining",
+    "supermarket": "grocery",
+    "grocery": "grocery",
+    "whole foods": "grocery",
+    "trader joe": "grocery",
+    "safeway": "grocery",
+    "kroger": "grocery",
+    "costco": "grocery",
+    "flight": "airline",
+    "airline": "airline",
+    "plane ticket": "airline",
+    "airfare": "airline",
+    "hotel": "hotel",
+    "lodging": "hotel",
+    "resort": "hotel"
+  },
+
+  "annual_credits": [
+    {
+      "name": "Dining Credit",
+      "amount_usd": 120,
+      "cadence": "monthly",
+      "monthly_amount_usd": 10,
+      "partners": ["Grubhub", "The Cheesecake Factory", "Goldbelly", "Wine.com", "Five Guys"],
+      "requires_enrollment": true
+    },
+    {
+      "name": "Dunkin' Credit",
+      "amount_usd": 84,
+      "cadence": "monthly",
+      "monthly_amount_usd": 7,
+      "partners": ["Dunkin'"],
+      "requires_enrollment": true
+    },
+    {
+      "name": "Resy Credit",
+      "amount_usd": 100,
+      "cadence": "semi-annual",
+      "semi_annual_amount_usd": 50,
+      "partners": ["Resy restaurants"],
+      "requires_enrollment": true
+    },
+    {
+      "name": "Uber Cash",
+      "amount_usd": 120,
+      "cadence": "monthly",
+      "monthly_amount_usd": 10,
+      "partners": ["Uber Eats", "Uber"],
+      "requires_enrollment": false
+    }
+  ],
+
+  "redemption": {
+    "transfer_partners": true,
+    "travel_portal": "AmexTravel.com",
+    "statement_credit": true,
+    "gift_cards": true,
+    "shopping": true
+  },
+
+  "point_valuation": {
+    "cpp_for_ranking": 1.0,
+    "cpp_note": "Using 1.0 cpp as default ranking value — reflects flight bookings via Amex Travel portal. Hotel portal bookings yield less (0.7 cpp); transfers to airline partners can exceed 1.0 cpp.",
+    "redemption_values": {
+      "amex_travel_flights": {
+        "cpp": 1.0,
+        "note": "Best portal redemption — use this for flight bookings on AmexTravel.com"
+      },
+      "amex_travel_hotels_prepaid": {
+        "cpp": 0.7,
+        "note": "General prepaid hotel bookings on AmexTravel.com. Lower value — consider transfer partners instead."
+      },
+      "fine_hotels_and_resorts": {
+        "cpp": 1.0,
+        "note": "FHR bookings on AmexTravel.com. Better than standard hotel portal rate."
+      },
+      "hotel_collection": {
+        "cpp": 0.7,
+        "note": "The Hotel Collection (THC) — same 0.7 cpp but includes $100 on-property amenity credit on 2+ night stays, which offsets the lower cpp."
+      },
+      "transfer_to_airline_partners": {
+        "cpp": 1.0,
+        "note": "Transferring to airline partners (e.g., ANA, Air France/KLM, Delta, British Airways) typically yields ~1.0–2.0 cpp depending on the redemption."
+      },
+      "transfer_to_hotel_partners": {
+        "cpp": 1.0,
+        "note": "Transferring to Hilton Honors (1:2 ratio) or Choice Hotels can yield 1.0+ cpp. Better than booking hotels directly on Amex Travel portal.",
+        "partners": ["Hilton Honors (1 MR : 2 Hilton)", "Choice Privileges (1 MR : 1.5 Choice)"]
+      },
+      "statement_credit": {
+        "cpp": 0.6,
+        "note": "Worst value — avoid unless necessary"
+      }
+    },
+    "best_practice": "For hotels, transfer to Hilton Honors or book Fine Hotels & Resorts rather than standard Amex Travel prepaid hotels. For flights, book directly on AmexTravel.com or transfer to airline partners for premium cabin awards."
+  }
+}

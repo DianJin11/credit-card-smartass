@@ -1,0 +1,150 @@
+{
+  "id": "wells-fargo-autograph",
+  "name": "Wells Fargo Autograph Card",
+  "issuer": "Wells Fargo",
+  "network": "Visa Signature",
+  "rewards_program": "Wells Fargo Rewards",
+  "points_currency": "WF",
+  "foreign_transaction_fee": false,
+  "annual_fee_usd": 0,
+
+  "earning_rates": {
+    "dining": {
+      "multiplier": 3,
+      "note": "Restaurants worldwide — dine-in, takeout, catering, delivery"
+    },
+    "travel": {
+      "multiplier": 3,
+      "note": "Airfare, hotels, car rentals, cruises"
+    },
+    "gas": {
+      "multiplier": 3,
+      "note": "Gas stations and EV charging stations"
+    },
+    "transit": {
+      "multiplier": 3,
+      "note": "Subways, rideshare, parking, tolls"
+    },
+    "streaming": {
+      "multiplier": 3,
+      "note": "Popular streaming services (Netflix, Spotify, Hulu, etc.)"
+    },
+    "phone": {
+      "multiplier": 3,
+      "note": "Cell phone and landline plan payments"
+    },
+    "default": {
+      "multiplier": 1,
+      "note": "All other eligible purchases"
+    }
+  },
+
+  "category_map": {
+    "restaurant": "dining",
+    "cafe": "dining",
+    "coffee shop": "dining",
+    "fast food": "dining",
+    "takeout": "dining",
+    "delivery": "dining",
+    "grubhub": "dining",
+    "doordash": "dining",
+    "ubereats": "dining",
+    "dunkin": "dining",
+    "starbucks": "dining",
+    "flight": "travel",
+    "airline": "travel",
+    "airfare": "travel",
+    "plane ticket": "travel",
+    "hotel": "travel",
+    "lodging": "travel",
+    "resort": "travel",
+    "car rental": "travel",
+    "cruise": "travel",
+    "gas": "gas",
+    "gas station": "gas",
+    "ev charging": "gas",
+    "charging station": "gas",
+    "shell": "gas",
+    "chevron": "gas",
+    "exxon": "gas",
+    "subway": "transit",
+    "metro": "transit",
+    "bus": "transit",
+    "lyft": "transit",
+    "uber": "transit",
+    "parking": "transit",
+    "toll": "transit",
+    "rideshare": "transit",
+    "netflix": "streaming",
+    "hulu": "streaming",
+    "spotify": "streaming",
+    "disney+": "streaming",
+    "apple tv": "streaming",
+    "amazon prime": "streaming",
+    "hbo": "streaming",
+    "peacock": "streaming",
+    "streaming": "streaming",
+    "phone plan": "phone",
+    "cell phone bill": "phone",
+    "at&t": "phone",
+    "verizon": "phone",
+    "t-mobile": "phone",
+    "phone bill": "phone"
+  },
+
+  "annual_credits": [],
+
+  "other_benefits": [
+    {
+      "name": "Cell Phone Protection",
+      "description": "Up to $600 in coverage per claim ($25 deductible) when you pay your monthly cell phone bill with this card."
+    },
+    {
+      "name": "Auto Rental Collision Damage Waiver",
+      "description": "Covers damage or theft on eligible car rentals when paid with this card."
+    },
+    {
+      "name": "Travel & Emergency Assistance",
+      "description": "Access to emergency assistance services when traveling."
+    },
+    {
+      "name": "Roadside Dispatch",
+      "description": "24/7 roadside assistance dispatch service."
+    },
+    {
+      "name": "Visa Signature Concierge",
+      "description": "Concierge service and Visa Signature Hotel Collection perks."
+    }
+  ],
+
+  "redemption": {
+    "transfer_partners": true,
+    "travel_portal": "Wells Fargo Rewards travel booking",
+    "statement_credit": true,
+    "gift_cards": true,
+    "pay_with_points": true,
+    "pay_with_points_note": "PayPal 'Pay with Rewards' for eligible purchases; also redeem for past purchases",
+    "points_cap": null
+  },
+
+  "point_valuation": {
+    "cpp_for_ranking": 1.0,
+    "cpp_note": "Fixed 1.0 cpp across all redemption methods via Wells Fargo portal. Transfer partners may yield higher value depending on the booking.",
+    "redemption_values": {
+      "wells_fargo_travel_portal": {
+        "cpp": 1.0,
+        "note": "Fixed value — flights, hotels, car rentals booked through Wells Fargo Rewards portal. No minimum redemption amount."
+      },
+      "statement_credit_travel": {
+        "cpp": 1.0,
+        "note": "Redeem as statement credit to cover previous travel purchases at the same 1.0 cpp rate."
+      },
+      "transfer_to_partners": {
+        "cpp": 1.0,
+        "note": "1:1 transfer ratio to airline and hotel partners. Value depends on how you redeem with the partner — can exceed 1.0 cpp for the right bookings.",
+        "partners": ["Air France/KLM Flying Blue (1:1)", "British Airways Avios (1:1)", "Choice Privileges (1:1)"]
+      }
+    },
+    "best_practice": "For everyday use, book through the Wells Fargo travel portal for a straightforward 1.0 cpp. For higher value, transfer to Air France/KLM Flying Blue or British Airways Avios — both allow booking partner airlines (e.g., Alaska, American) at potentially better rates."
+  }
+}

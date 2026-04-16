@@ -1,0 +1,252 @@
+{
+  "id": "chase-sapphire-reserve",
+  "name": "Chase Sapphire Reserve",
+  "issuer": "Chase",
+  "network": "Visa Infinite",
+  "rewards_program": "Ultimate Rewards",
+  "points_currency": "UR",
+  "foreign_transaction_fee": false,
+
+  "booking_insights": {
+    "hotel": "Hotel bookings almost always favor this card: 8X UR via Chase Travel portal at 1.5¢/pt = 12¢ per $1 — far ahead of Amex Gold (2X at 1.0¢ = 2¢) and WF Autograph (3X at 1.0¢ = 3¢). Stack with the $300 travel credit and $500 The Edit credit for maximum value."
+  },
+
+  "earning_rates": {
+    "chase_travel_portal": {
+      "multiplier": 8,
+      "note": "Purchases made through Chase Travel portal (chase.com or app)"
+    },
+    "airline": {
+      "multiplier": 4,
+      "note": "Flights booked directly with airlines or through Chase Travel"
+    },
+    "hotel": {
+      "multiplier": 4,
+      "note": "Hotels booked directly with hotel or through Chase Travel"
+    },
+    "dining": {
+      "multiplier": 3,
+      "note": "Restaurants worldwide, including takeout and eligible delivery services"
+    },
+    "lyft": {
+      "multiplier": 5,
+      "note": "Qualifying Lyft products and services through Lyft app",
+      "expiry": "2027-09-30"
+    },
+    "peloton_equipment": {
+      "multiplier": 10,
+      "note": "Peloton equipment and accessory purchases over $150, up to $5,000 total",
+      "purchase_minimum_usd": 150,
+      "spend_cap_usd": 5000,
+      "expiry": "2027-12-31"
+    },
+    "default": {
+      "multiplier": 1,
+      "note": "All other eligible purchases"
+    }
+  },
+
+  "category_map": {
+    "restaurant": "dining",
+    "cafe": "dining",
+    "coffee shop": "dining",
+    "fast food": "dining",
+    "takeout": "dining",
+    "delivery": "dining",
+    "grubhub": "dining",
+    "doordash": "dining",
+    "ubereats": "dining",
+    "caviar": "dining",
+    "dunkin": "dining",
+    "starbucks": "dining",
+    "flight": "airline",
+    "airline": "airline",
+    "plane ticket": "airline",
+    "airfare": "airline",
+    "united": "airline",
+    "delta": "airline",
+    "american airlines": "airline",
+    "southwest": "airline",
+    "jetblue": "airline",
+    "hotel": "hotel",
+    "lodging": "hotel",
+    "resort": "hotel",
+    "marriott": "hotel",
+    "hilton": "hotel",
+    "hyatt": "hotel",
+    "ihg": "hotel",
+    "airbnb": "hotel",
+    "lyft": "lyft",
+    "peloton": "peloton_equipment"
+  },
+
+  "booking_context_note": "Earning 8X requires booking through Chase Travel portal. 4X applies when booking directly with airlines or hotels. The app should ask user how they are booking travel to determine correct multiplier.",
+
+  "annual_credits": [
+    {
+      "name": "Annual Travel Credit",
+      "amount_usd": 300,
+      "cadence": "annual",
+      "trigger": "automatic",
+      "applies_to": "travel category purchases broadly",
+      "note": "Auto-applied to first $300 of travel purchases each account year. Any travel purchase qualifies — flights, hotels, rideshare, etc."
+    },
+    {
+      "name": "Annual Dining Credit",
+      "amount_usd": 300,
+      "cadence": "semi-annual",
+      "semi_annual_amount_usd": 150,
+      "trigger": "automatic",
+      "applies_to": "select restaurants (OpenTable Sapphire Reserve Exclusive Tables list)",
+      "note": "Must dine at select restaurants; not all restaurants qualify. See opentable.com/sapphire-reserve-exclusive-tables for list."
+    },
+    {
+      "name": "StubHub Credit",
+      "amount_usd": 300,
+      "cadence": "semi-annual",
+      "semi_annual_amount_usd": 150,
+      "trigger": "one-time activation on chase.com or Chase app",
+      "applies_to": "StubHub and viagogo purchases (excluding gift cards)",
+      "expiry": "2027-12-31"
+    },
+    {
+      "name": "The Edit Hotel Credit",
+      "amount_usd": 500,
+      "cadence": "semi-annual",
+      "semi_annual_amount_usd": 250,
+      "trigger": "automatic",
+      "applies_to": "Prepaid 2-night+ stays at The Edit by Chase Travel",
+      "note": "Starting 1/1/2026. Must be Pay Now prepaid stays of 2 nights or more.",
+      "start_date": "2026-01-01"
+    },
+    {
+      "name": "Select Hotels Credit (2026)",
+      "amount_usd": 250,
+      "cadence": "one-time annual cap",
+      "trigger": "automatic",
+      "applies_to": "IHG, Montage, Pendry, Omni, Virgin Hotels, Minor Hotels, Pan Pacific — prepaid 2-night+ stays on Chase Travel",
+      "valid_year": 2026
+    },
+    {
+      "name": "Lyft Monthly Credit",
+      "amount_usd": 120,
+      "cadence": "monthly",
+      "monthly_amount_usd": 10,
+      "trigger": "add card to Lyft app",
+      "applies_to": "Lyft rideshare rides (Standard, Extra Comfort, XL, Black, Black SUV)",
+      "expiry": "2027-09-30"
+    },
+    {
+      "name": "Peloton Membership Credit",
+      "amount_usd": 120,
+      "cadence": "monthly",
+      "monthly_amount_usd": 10,
+      "trigger": "one-time activation on chase.com or Chase app",
+      "applies_to": "Peloton All-Access, Rental, App+, Guide, App One, or Strength+ memberships",
+      "expiry": "2027-12-31"
+    },
+    {
+      "name": "DoorDash Restaurant Discount",
+      "amount_usd": 60,
+      "cadence": "monthly",
+      "monthly_amount_usd": 5,
+      "trigger": "activate DashPass membership",
+      "applies_to": "$5 off one restaurant DoorDash order per month",
+      "expiry": "2027-12-31"
+    },
+    {
+      "name": "DoorDash Non-Restaurant Discount",
+      "amount_usd": 240,
+      "cadence": "monthly",
+      "monthly_amount_usd": 20,
+      "trigger": "activate DashPass membership",
+      "applies_to": "Two $10-off discounts per month on non-restaurant DoorDash orders",
+      "expiry": "2027-12-31"
+    },
+    {
+      "name": "Global Entry / TSA PreCheck / NEXUS",
+      "amount_usd": 120,
+      "cadence": "every 4 years",
+      "trigger": "automatic statement credit after charge",
+      "applies_to": "Application fee for Global Entry, TSA PreCheck, or NEXUS"
+    }
+  ],
+
+  "other_benefits": [
+    {
+      "name": "Priority Pass Select Membership",
+      "description": "Complimentary airport lounge access for primary cardmember and authorized users, plus 2 guests each. Additional guests $27/visit."
+    },
+    {
+      "name": "DashPass",
+      "description": "Complimentary DashPass membership for DoorDash and Caviar through 12/31/2027. Requires activation."
+    },
+    {
+      "name": "Apple TV+",
+      "description": "Complimentary Apple TV+ subscription through 6/22/2027. One-time activation required."
+    },
+    {
+      "name": "Apple Music",
+      "description": "Complimentary Apple Music individual subscription through 6/22/2027. One-time activation required."
+    },
+    {
+      "name": "IHG Platinum Elite Status",
+      "description": "Complimentary IHG One Rewards Platinum Elite status through 12/31/2027. Requires linking IHG account."
+    },
+    {
+      "name": "Air Canada Lounge Access",
+      "description": "Complimentary access to Air Canada Maple Leaf Lounges and Cafés for cardholder + 1 guest when departing on Star Alliance flights."
+    }
+  ],
+
+  "spend_milestone_benefits": {
+    "threshold_usd": 75000,
+    "cadence": "calendar year",
+    "benefits": [
+      "IHG One Rewards Diamond Elite Status",
+      "$250 Credit for The Shops at Chase",
+      "$500 Southwest Airlines Chase Travel Credit",
+      "Southwest Rapid Rewards A-List Status"
+    ]
+  },
+
+  "redemption": {
+    "transfer_partners": true,
+    "travel_portal": "Chase Travel (1.5 cents per point)",
+    "statement_credit": true,
+    "gift_cards": true,
+    "pay_with_points": true,
+    "points_boost": true,
+    "points_boost_note": "Select flights/hotels on Chase Travel may offer up to 2x points value via Points Boost promotions"
+  },
+
+  "point_valuation": {
+    "cpp_for_ranking": 1.5,
+    "cpp_note": "Using 1.5 cpp as default ranking value — guaranteed rate through Chase Travel portal for CSR cardholders. Points Boost on select hotels can push this up to 2.0 cpp.",
+    "redemption_values": {
+      "chase_travel_portal_standard": {
+        "cpp": 1.5,
+        "note": "Standard redemption through Chase Travel portal — guaranteed for all CSR cardholders on flights, hotels, car rentals."
+      },
+      "points_boost_hotels": {
+        "cpp": 2.0,
+        "note": "Maximum value via Points Boost on select rotating hotels (look for blue rocket ship icon on chasetravel.com). Primarily available on 'The Edit' luxury collection. List of eligible hotels rotates and is not fixed — check portal at time of booking.",
+        "todo": "Add specific Points Boost hotel list when available"
+      },
+      "the_edit_hotels": {
+        "cpp": 2.0,
+        "note": "Booking through 'The Edit' collection on Chase Travel often qualifies for Points Boost (up to 2 cpp) and includes perks like breakfast and property credits. Can be stacked with the $300 annual travel credit and $500 The Edit credit."
+      },
+      "transfer_to_partners": {
+        "cpp": 1.5,
+        "note": "Transferring to airline/hotel partners (Hyatt, United, Southwest, etc.) can match or exceed 1.5 cpp depending on the redemption. Hyatt transfers are widely considered the highest-value option (often 2.0+ cpp for luxury properties).",
+        "top_partners": ["World of Hyatt (1:1 — highest value)", "United MileagePlus (1:1)", "Southwest Rapid Rewards (1:1)", "Air France/KLM Flying Blue (1:1)"]
+      },
+      "statement_credit": {
+        "cpp": 1.0,
+        "note": "Lowest value option — avoid unless necessary"
+      }
+    },
+    "best_practice": "Always book through Chase Travel portal to get at least 1.5 cpp. For luxury hotels, check for the Points Boost rocket icon to potentially get 2.0 cpp. For non-Chase-Travel hotels, consider transferring to World of Hyatt for highest value."
+  }
+}
