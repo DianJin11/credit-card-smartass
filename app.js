@@ -27,6 +27,8 @@ const CATEGORY_LABELS = {
   car_rental:          'Car Rental',
   ubereats:            'Uber Eats',
   doordash:            'DoorDash',
+  doordash_food:       'DoorDash (Restaurant)',
+  doordash_nonfood:    'DoorDash (Non-food)',
   chase_travel_portal: 'Chase Travel Portal',
   default:             'General Purchase'
 };
