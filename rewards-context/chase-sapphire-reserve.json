@@ -59,7 +59,7 @@
     },
     "doordash_nonfood": {
       "multiplier": 3,
-      "note": "Earns 3X as dining; $10-off non-restaurant credit applies (DashPass must be active)"
+      "note": "Earns 3X because Chase categorizes all DoorDash charges under the same dining MCC regardless of what was ordered — groceries, convenience, etc. all bill as 'DoorDash' and earn 3X. $10-off non-restaurant credit also applies (DashPass must be active)."
     },
     "default": {
       "multiplier": 1,

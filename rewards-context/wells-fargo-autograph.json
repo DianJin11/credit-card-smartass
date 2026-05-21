@@ -8,6 +8,10 @@
   "foreign_transaction_fee": false,
   "annual_fee_usd": 0,
 
+  "booking_insights": {
+    "phone": "WF Autograph earns 3X on phone plans — but your Verizon bill is paid via joint checking account for a $20/month autopay discount ($240/year). Do NOT switch Verizon to any credit card. The bank discount far exceeds any card rewards (3X on a ~$100 bill ≈ $3/month = $36/year). This 3X benefit only applies to other carrier bills (AT&T, T-Mobile, etc.)."
+  },
+
   "earning_rates": {
     "dining": {
       "multiplier": 3,
@@ -87,7 +91,7 @@
     "phone plan": "phone",
     "cell phone bill": "phone",
     "at&t": "phone",
-    "verizon": "phone",
+    "verizon": "verizon",
     "t-mobile": "phone",
     "phone bill": "phone"
   },
